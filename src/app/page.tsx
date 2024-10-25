@@ -16,7 +16,10 @@ export default function Home() {
         />
         <div className="relative h-full w-full flex flex-col items-center justify-between py-8 z-10">
           <h1>NJCR STUDIO</h1>
-          <h1 style={{ textDecoration: "none" }}>NJCRSTUDIO@GMAIL.COM</h1>
+
+          <a href="mailto:njcrstudio@gmail.com" >
+            <h1>NJCRSTUDIO@GMAIL.COM</h1>
+          </a>
         </div>
       </section>
     </div>

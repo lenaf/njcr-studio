@@ -10,6 +10,7 @@
 
 body {
   font-family: 'VremenaGroteskBook';
+  text-decoration: "none";
 }
 
 .task-list-item::before {
