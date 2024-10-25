@@ -1,13 +1,13 @@
 const siteData = {
-  title: 'She Runs the World Documentary',
-  description: 'Allyson Felix',
+  title: 'njcrstudio',
+  description: 'njcrstudio',
   language: 'en-us',
   locale: 'en-US',
   routes: [
     { href: '/', title: 'Home' },
-    { href: '/about', title: 'About' },
-    { href: '/credits', title: 'Credits' },
-    { href: '/press', title: 'Press' },
+    // { href: '/about', title: 'About' },
+    // { href: '/credits', title: 'Credits' },
+    // { href: '/press', title: 'Press' },
   ],
 }
 
