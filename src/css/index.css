@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'VremenaGroteskBook';
+  src: url('/fonts/VremenaGroteskBook.woff') format('woff');
+}
+
+body {
+  font-family: 'VremenaGroteskBook';
+}
+
 .task-list-item::before {
   @apply hidden;
 }

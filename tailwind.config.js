@@ -54,7 +54,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Questrial', ...fontFamily.sans]
+        sans: ['VremenaGroteskBook', ...fontFamily.sans]
       },
       typography: ({ theme }) => ({
         DEFAULT: {
