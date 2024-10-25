@@ -14,7 +14,7 @@ export default function Home() {
           fill
           className="absolute object-cover object-middle"
         />
-        <div className="relative h-full w-full flex flex-col items-center justify-between z-10">
+        <div className="relative h-full w-full flex flex-col items-center justify-between py-8 z-10">
           <h1>NJCR STUDIO</h1>
           <h1 style={{ textDecoration: "none" }}>NJCRSTUDIO@GMAIL.COM</h1>
         </div>
