@@ -5,9 +5,8 @@ const siteData = {
   locale: 'en-US',
   routes: [
     { href: '/', title: 'Home' },
-    // { href: '/about', title: 'About' },
-    // { href: '/credits', title: 'Credits' },
-    // { href: '/press', title: 'Press' },
+    { href: '/about', title: 'About' },
+    { href: '/work', title: 'Work' },
   ],
 }
 

@@ -2,24 +2,22 @@
 
 import Link from '../common/Link'
 import siteData from '@/data/siteData';
-import LinkAsButton from '../common/LinkAsButton';
 import { usePathname } from 'next/navigation';
 
-const NavLinks = ({ linkClass, ...rest }: React.HTMLProps<HTMLElement> & { linkClass?: string }) => {
+const NavLinks = ({ linkClass, className, ...rest }: React.HTMLProps<HTMLElement> & { linkClass?: string }) => {
   const pathname = usePathname()
 
   return (
-    <nav {...rest}>
+    <nav className={className} {...rest}>
       {siteData.routes.map((link) => (
         <Link
           key={link.title}
           href={link.href}
-          className={`${linkClass ?? ''} ${pathname === link.href ? 'underline underline-offset-8 decoration-primary' : ''}`}
+          className={`${linkClass ?? ''} ${pathname === link.href ? 'font-black' : ''}`}
         >
           {link.title}
         </Link>
       ))}
-      <LinkAsButton className="btn-primary " href="/" target="_blank">Watch Trailer</LinkAsButton>
     </nav>
   )
 }

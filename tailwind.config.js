@@ -13,7 +13,7 @@ module.exports = {
     './src/data/**/*.mdx',
   ],
   daisyui: {
-    themes: ["light", "dark", "cupcake", "pastel", {
+    themes: ["light", "cupcake", "pastel", {
       custom: {
         "primary": "#EFBC30",
         "primary-content": "#0f172a",
