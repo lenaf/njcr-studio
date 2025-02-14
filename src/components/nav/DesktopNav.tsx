@@ -8,7 +8,7 @@ const DesktopNav = () => {
 
     return (
         <div className="desktop">
-            <NavLinks className="flex flex-col" />
+            <NavLinks />
         </div>
     )
 }

@@ -1,25 +1,25 @@
 "use client"
 
 import Image from "next/image"
-import background from "public/images/photography/background.jpg"
+import Link from "next/link";
+import fabric_green from "public/images/photography/fabric_green.png"
+import fabric_bw from "public/images/photography/fabric_bw.png"
+import fabric_red from "public/images/photography/fabric_red.png"
+import fabric_blue_red from "public/images/photography/fabric_blue_red.png"
+import fabric_blue_green from "public/images/photography/fabric_blue_green.png"
+
+const fabrics = [fabric_green, fabric_bw, fabric_red, fabric_red, fabric_blue_red, fabric_blue_green]
 
 export default function Home() {
+  const randomFrabric = fabrics[Math.floor(Math.random() * fabrics.length)];
+
   return (
-    <div className="w-full">
-
-      <section id='home' className="">
-        <Image
-          src={background}
-          alt="Living room designed by Noah"
-        />
-        <div className="relative h-full w-full flex flex-col items-center justify-between py-8 z-10">
-          <h1>NJCR STUDIO</h1>
-
-          <a href="mailto:njcrstudio@gmail.com" >
-            <h1>NJCRSTUDIO@GMAIL.COM</h1>
-          </a>
-        </div>
-      </section>
+    <div className="w-full flex flex-col items-center justify-center py-16 px-16 md:px-28 lg:px-64 gap-4">
+      <Image
+        src={randomFrabric}
+        alt="Noah"
+      />
+      <Link className="uppercase text-xl font-black" href='/nav'>{'< Enter >'} </Link>
     </div>
   );
 }

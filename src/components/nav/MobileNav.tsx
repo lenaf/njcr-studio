@@ -25,7 +25,7 @@ const Nav = () => {
                         <VscChromeClose size={16} />
                     </button>
                 </div>
-                <NavLinks className="flex flex-col" />
+                <NavLinks />
             </div>
 
         </div>

@@ -3,10 +3,11 @@ const siteData = {
   description: 'njcrstudio',
   language: 'en-us',
   locale: 'en-US',
-  routes: [
+  navRoutes: [
     { href: '/', title: 'Home' },
     { href: '/about', title: 'About' },
     { href: '/work', title: 'Work' },
+    { href: '/contact', title: 'Contact' },
   ],
 }
 

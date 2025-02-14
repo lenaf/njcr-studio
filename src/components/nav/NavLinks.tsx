@@ -8,8 +8,8 @@ const NavLinks = ({ linkClass, className, ...rest }: React.HTMLProps<HTMLElement
   const pathname = usePathname()
 
   return (
-    <nav className={`${className ?? ''} uppercase`} {...rest}>
-      {siteData.routes.map((link) => (
+    <nav className={`${className ?? ''} flex flex-col uppercase`} {...rest}>
+      {siteData.navRoutes.map((link) => (
         <Link
           key={link.title}
           href={link.href}

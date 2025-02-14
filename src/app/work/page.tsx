@@ -35,7 +35,7 @@ export default function Page() {
             src={src}
             alt={alt}
             width={500}
-            className="w-full brightness-75	"
+            className="w-half ml-auto"
           />)}
       </Carousel>
     </div>
