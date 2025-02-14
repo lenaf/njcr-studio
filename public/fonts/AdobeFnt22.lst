@@ -1,0 +1,37 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/noahruttenberg/Desktop/NJCR LLC/_Admin/WEBSITE/NJCR STUDIO WEBSITE Folder/Document fonts/AdobeFnt22.lst
+FileLength:624
+FileModTime:760313014
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/noahruttenberg/Desktop/NJCR LLC/_Admin/WEBSITE/NJCR STUDIO WEBSITE Folder/Document fonts/MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:217280
+FileModTime:483541202
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+

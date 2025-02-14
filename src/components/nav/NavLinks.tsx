@@ -8,7 +8,7 @@ const NavLinks = ({ linkClass, className, ...rest }: React.HTMLProps<HTMLElement
   const pathname = usePathname()
 
   return (
-    <nav className={className} {...rest}>
+    <nav className={`${className ?? ''} uppercase`} {...rest}>
       {siteData.routes.map((link) => (
         <Link
           key={link.title}

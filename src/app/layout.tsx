@@ -3,6 +3,10 @@ import '../css/index.css'
 import siteData from "@/data/siteData";
 import MobileNav from "@/components/nav/MobileNav";
 import DesktopNav from "@/components/nav/DesktopNav";
+import localFont from 'next/font/local'
+
+const minion = localFont({ src: "../../public/fonts/MinionPro-Regular.otf" })
+
 
 export const metadata: Metadata = {
   title: siteData.title,
@@ -19,7 +23,7 @@ export default function RootLayout({
     <html data-theme="light" lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
-        <main>
+        <main className={minion.className}>
           <div className="flex p-24 sm:gap-24">
             <div>
               <MobileNav />
