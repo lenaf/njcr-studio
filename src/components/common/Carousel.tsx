@@ -2,6 +2,9 @@
 
 import { Children, useEffect, useRef, useState } from "react";
 import Button from "./Button";
+import Image from "next/image";
+import leftArrow from "public/images/icons/left.png";
+import rightArrow from "public/images/icons/right1.png";
 
 interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
     id: string;
@@ -50,16 +53,18 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         {child}
                     </div>)}
             </div>
-            <div className="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <div
+                className="absolute right-0"
+            >
                 <Button
                     id='scroll-back'
                     onClick={() => {
                         scrollToIndex(isFirstActive ? itemsLength - 1 : activeIndex - 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
+                    className={`bg-white hover:bg-white border-none shadow-none btn-circle btn-md`}
                 >
-                    ❮
+                    <Image src={leftArrow} alt='left arrow' />
                 </Button>
                 <Button
                     id='scroll-forward'
@@ -67,9 +72,9 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         scrollToIndex(isLastActive ? 0 : activeIndex + 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
+                    className={`bg-white hover:bg-white border-none shadow-none btn-circle btn-md`}
                 >
-                    ❯
+                    <Image src={rightArrow} alt='right arrow' />
                 </Button>
             </div>
         </div>
