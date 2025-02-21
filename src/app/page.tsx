@@ -24,7 +24,7 @@ export default function Home() {
           placeholder="blur"
         />
       </div>
-      <Link className="uppercase text-xl font-black" href='/nav'>{'< Enter >'} </Link>
+      <Link className="uppercase text-xl" href='/nav'>{'< Enter >'} </Link>
     </div>
   );
 }
