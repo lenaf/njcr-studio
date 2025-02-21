@@ -21,6 +21,7 @@ export default function Home() {
           alt="Noah"
           fill={true}
           objectFit="contain"
+          placeholder="blur"
         />
       </div>
       <Link className="uppercase text-xl font-black" href='/nav'>{'< Enter >'} </Link>
