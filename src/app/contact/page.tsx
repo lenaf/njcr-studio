@@ -10,9 +10,9 @@ export default function Page() {
     <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 flex flex-col h-full w-full">
       <div>
         <div className="uppercase mb-4"> Contact</div>
-        <div><Link href="mailto: info@mariposa.gallery">njcrstudio@gmail.com</Link></div>
-        <div> <Link href="tel:+1 917 209 9253"> 917.209.9253 </Link></div>
-        <div><Link target="_blank" href='https://www.instagram.com/noahruttenberg/'>@noahruttenberg</Link></div>
+        <div><Link className="no-underline" href="mailto: info@mariposa.gallery">njcrstudio@gmail.com</Link></div>
+        <div> <Link className="no-underline" href="tel:+1 917 209 9253"> 917.209.9253 </Link></div>
+        <div><Link className="no-underline" target="_blank" href='https://www.instagram.com/noahruttenberg/'>@noahruttenberg</Link></div>
       </div>
       <div className="relative flex-grow md:mt-10">
         <Image
