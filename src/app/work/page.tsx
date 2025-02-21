@@ -1,28 +1,24 @@
 import { Carousel } from "@/components/common/Carousel"
 import { genPageMetadata } from "../seo"
 import Image from "next/image"
-import koreaTown1 from "public/images/photography/interiors/koreaTown1.jpeg"
-import koreaTown2 from "public/images/photography/interiors/koreaTown2.jpeg"
-import koreaTown3 from "public/images/photography/interiors/koreaTown3.jpeg"
-import koreaTown4 from "public/images/photography/interiors/koreaTown4.jpeg"
-import koreaTown5 from "public/images/photography/interiors/koreaTown5.jpeg"
-import koreaTown6 from "public/images/photography/interiors/koreaTown6.jpeg"
-import koreaTown7 from "public/images/photography/interiors/koreaTown7.jpeg"
-import koreaTown8 from "public/images/photography/interiors/koreaTown8.jpeg"
-import upperEastSide from "public/images/photography/interiors/upperEastSide.jpg"
+import boot from "public/images/photography/interiors/koreatown/boot.jpeg"
+import dining from "public/images/photography/interiors/koreatown/dining.jpeg"
+import bed from "public/images/photography/interiors/koreatown/bed.jpeg"
+import chairs from "public/images/photography/interiors/koreatown/chairs.jpeg"
+import kitchen from "public/images/photography/interiors/koreatown/kitchen.jpeg"
+import pillows from "public/images/photography/interiors/koreatown/pillows.jpeg"
+import table from "public/images/photography/interiors/koreatown/table.jpeg"
 
 export const metadata = genPageMetadata({ title: 'Work' })
 
 const carouselImages = [
-  { src: koreaTown1, alt: '' },
-  { src: koreaTown2, alt: '' },
-  { src: koreaTown3, alt: '' },
-  { src: koreaTown4, alt: '' },
-  { src: koreaTown5, alt: '' },
-  { src: koreaTown6, alt: '' },
-  { src: koreaTown7, alt: '' },
-  { src: koreaTown8, alt: '' },
-  { src: upperEastSide, alt: '' }
+  { src: boot, alt: '' },
+  { src: bed, alt: '' },
+  { src: dining, alt: '' },
+  { src: table, alt: '' },
+  { src: kitchen, alt: '' },
+  { src: pillows, alt: '' },
+  { src: chairs, alt: '' },
 ]
 
 export default function Page() {

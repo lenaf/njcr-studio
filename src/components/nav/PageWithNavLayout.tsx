@@ -7,8 +7,8 @@ export default function PageLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex p-16 sm:gap-16">
-      <div className="mt-16">
+    <div className="flex py-16 px-10 md:px-16 sm:gap-16 md:gap-24 h-screen">
+      <div className="mt-10">
         <MobileNav />
         <DesktopNav />
       </div >
