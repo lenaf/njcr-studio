@@ -4,7 +4,7 @@ export default function Nav() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center h-screen px-6 md:px-24 gap-4">
-      <NavLinks />
+      <NavLinks className="-mt-24" />
     </div>
   );
 }
