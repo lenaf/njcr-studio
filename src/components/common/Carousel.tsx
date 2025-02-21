@@ -43,6 +43,36 @@ export function Carousel({ className = '', children, id = 'carousel', isAutoPlay
         return clearAutoPlayInterval;
     }, [triggerAutoPlayStart, activeIndex]);
 
+    // **Scroll Listener**
+    useEffect(() => {
+        const carousel = document.getElementById(id);
+        if (!carousel) return;
+
+        const handleScroll = () => {
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            for (let i = 0; i < itemsLength; i++) {
+                const child = carousel.children[i] as HTMLElement;
+                if (child) {
+                    const distance = Math.abs(carousel.scrollLeft - child.offsetLeft);
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closestIndex = i;
+                    }
+                }
+            }
+
+            if (closestIndex !== activeIndex) {
+                setActiveIndex(closestIndex);
+                setActiveIndexCb?.(closestIndex);
+            }
+        };
+
+        carousel.addEventListener("scroll", handleScroll);
+        return () => carousel.removeEventListener("scroll", handleScroll);
+    }, [activeIndex, itemsLength]);
+
     return (
         <div className={`${className}`}>
             <div
