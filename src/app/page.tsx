@@ -14,11 +14,15 @@ export default function Home() {
   const randomFrabric = fabrics[Math.floor(Math.random() * fabrics.length)];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-16 px-16 md:px-28 lg:px-64 gap-4">
-      <Image
-        src={randomFrabric}
-        alt="Noah"
-      />
+    <div className="flex flex-col items-center justify-center gap-4 h-screen w-full">
+      <div className="relative h-2/5 xs:h-1/2 sm:h-2/3 md:h-3/4 w-full">
+        <Image
+          src={randomFrabric}
+          alt="Noah"
+          fill={true}
+          objectFit="contain"
+        />
+      </div>
       <Link className="uppercase text-xl font-black" href='/nav'>{'< Enter >'} </Link>
     </div>
   );
