@@ -22,7 +22,7 @@ const carouselImages = [
   { src: boot, alt: 'koreatown' },
   { src: table, alt: 'koreatown' },
   { src: bed, alt: 'koreatown' },
-  { src: dining, alt: 'upper east side' },
+  { src: dining, alt: 'koreatown' },
   { src: pillows, alt: 'koreatown' },
   { src: stairs, alt: 'williamsburg' },
   { src: kitchen, alt: 'koreatown' },
