@@ -2,11 +2,11 @@
 
 import Image from "next/image"
 import Link from "next/link";
-import fabric_green from "public/images/photography/fabric_green.png"
-import fabric_bw from "public/images/photography/fabric_bw.png"
-import fabric_red from "public/images/photography/fabric_red.png"
-import fabric_blue_red from "public/images/photography/fabric_blue_red.png"
-import fabric_blue_green from "public/images/photography/fabric_blue_green.png"
+import fabric_green from "public/images/photography/fabrics/green.png"
+import fabric_bw from "public/images/photography/fabrics/bw.png"
+import fabric_red from "public/images/photography/fabrics/red.png"
+import fabric_blue_red from "public/images/photography/fabrics/blue_red.png"
+import fabric_blue_green from "public/images/photography/fabrics/blue_green.png"
 
 const fabrics = [fabric_green, fabric_bw, fabric_red, fabric_red, fabric_blue_red, fabric_blue_green]
 

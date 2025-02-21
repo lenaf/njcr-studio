@@ -1,6 +1,6 @@
 import { genPageMetadata } from "../seo"
 import Image from "next/image";
-import koreaTown7 from "public/images/photography/koreaTown7.jpeg"
+import koreaTown7 from "public/images/photography/interiors/koreaTown7.jpeg"
 
 export const metadata = genPageMetadata({ title: 'About' })
 
