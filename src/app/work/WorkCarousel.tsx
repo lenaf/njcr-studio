@@ -36,7 +36,7 @@ export default function WorkCarousel() {
     <div className="h-full w-full">
       <Carousel setActiveIndexCb={setActiveIndex} className="relative w-full h-1/2 xs:h-3/4 sm:h-full sm:pb-10" isAutoPlay={false}>
         {carouselImages.map(({ src, alt }, i) =>
-          <div className="relative flex grow">
+          <div key={i} className="relative flex grow">
             <Image
               src={src}
               alt={alt}
