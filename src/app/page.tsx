@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4 h-screen w-full">
-      <div className="relative h-1/3 xs:h-1/2 sm:h-2/3 md:h-3/4 w-full -mt-8">
+      <div className="relative h-1/3 xs:h-1/2 sm:h-2/3 md:h-3/4 w-full -mt-16 md:-mt-8">
         <Image
           src={randomFrabric}
           alt="Noah"
