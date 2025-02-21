@@ -1,5 +1,6 @@
 import { genPageMetadata } from "../seo"
 import Image from "next/image";
+import Link from "next/link";
 import dining from "public/images/photography/interiors/ues/dining.jpg"
 
 export const metadata = genPageMetadata({ title: 'Contact' })
@@ -9,10 +10,9 @@ export default function Page() {
     <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 flex flex-col h-full w-full">
       <div>
         <div className="uppercase mb-4"> Contact</div>
-        <div>njcrstudio@gmail.com</div>
-        <div>917.209.9253 </div>
-        <div>@noahruttenberg</div>
-
+        <div><Link href="mailto: info@mariposa.gallery">njcrstudio@gmail.com</Link></div>
+        <div> <Link href="tel:+1 917 209 9253"> 917.209.9253 </Link></div>
+        <div><Link target="_blank" href='https://www.instagram.com/noahruttenberg/'>@noahruttenberg</Link></div>
       </div>
       <div className="relative flex-grow md:mt-10">
         <Image
