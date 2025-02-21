@@ -7,12 +7,13 @@ import leftArrow from "public/images/icons/left.png";
 import rightArrow from "public/images/icons/right1.png";
 
 interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
-    id: string;
+    id?: string;
     isAutoPlay?: boolean;
     showArrows?: boolean;
+    setActiveIndexCb?: (index: number) => void;
 }
 
-export function Carousel({ className = '', children, id, isAutoPlay = true, showArrows, ...rest }: CarouselProps) {
+export function Carousel({ className = '', children, id = 'carousel', isAutoPlay = true, showArrows, setActiveIndexCb, ...rest }: CarouselProps) {
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const itemsLength = Children.count(children);
     const isFirstActive = activeIndex === 0;
@@ -27,6 +28,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
             const left = (carousel?.childNodes[index] as HTMLElement)?.offsetLeft;
             carousel.scrollTo({ left: left, behavior: 'instant' });
             setActiveIndex(index);
+            setActiveIndexCb?.(index);
         }
     };
 
@@ -42,14 +44,14 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
     }, [triggerAutoPlayStart, activeIndex]);
 
     return (
-        <div className={`relative w-full ${className}`}>
+        <div className={`${className}`}>
             <div
                 {...rest}
                 id={id}
-                className="carousel relative w-full"
+                className="carousel relative w-full h-full "
             >
                 {Children.map(children, (child) =>
-                    <div className='carousel-item w-full'>
+                    <div className='carousel-item w-full h-full'>
                         {child}
                     </div>)}
             </div>
@@ -62,7 +64,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         scrollToIndex(isFirstActive ? itemsLength - 1 : activeIndex - 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    className={`bg-white hover:bg-white border-none shadow-none btn-circle btn-md`}
+                    className={`bg-white hover:bg-white border-none shadow-none btn-circle w-8 sm:w-12`}
                 >
                     <Image src={leftArrow} alt='left arrow' />
                 </Button>
@@ -72,7 +74,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         scrollToIndex(isLastActive ? 0 : activeIndex + 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    className={`bg-white hover:bg-white border-none shadow-none btn-circle btn-md`}
+                    className={`bg-white hover:bg-white border-none shadow-none btn-circle w-8 sm:w-12`}
                 >
                     <Image src={rightArrow} alt='right arrow' />
                 </Button>
