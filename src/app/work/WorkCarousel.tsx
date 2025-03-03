@@ -5,6 +5,7 @@ import Image from "next/image"
 import boot from "public/images/photography/interiors/koreatown/boot.jpeg"
 import dining from "public/images/photography/interiors/koreatown/dining.jpeg"
 import bed from "public/images/photography/interiors/koreatown/bed.jpeg"
+import bedside from "public/images/photography/interiors/koreatown/bedside.jpeg"
 import couch from "public/images/photography/interiors/koreatown/couch.jpeg"
 import chairs from "public/images/photography/interiors/koreatown/chairs.jpeg"
 import kitchen from "public/images/photography/interiors/koreatown/kitchen.jpeg"
@@ -12,17 +13,26 @@ import pillows from "public/images/photography/interiors/koreatown/pillows.jpeg"
 import table from "public/images/photography/interiors/koreatown/table.jpeg"
 import office from "public/images/photography/interiors/ues/office.jpg"
 import stairs from "public/images/photography/interiors/williamsburg/stairs.jpg"
-import living from "public/images/photography/interiors/williamsburg/living.jpeg"
+import kitchenW from "public/images/photography/interiors/williamsburg/kitchen.jpg"
+import living from "public/images/photography/interiors/ues/living.jpeg"
+import diningUES from "public/images/photography/interiors/ues/dining.jpg"
+import checkers from "public/images/photography/interiors/ues/checkers.jpg"
+import nook from "public/images/photography/interiors/ues/nook.jpg"
+
 import { useState } from "react"
 
 const carouselImages = [
   { src: office, alt: 'upper east side' },
   { src: chairs, alt: 'koreatown' },
-  { src: living, alt: 'williamsburg' },
+  { src: living, alt: 'upper east side' },
   { src: boot, alt: 'koreatown' },
   { src: table, alt: 'koreatown' },
-  { src: bed, alt: 'koreatown' },
+  { src: bedside, alt: 'koreatown' },
+  { src: diningUES, alt: 'upper east side' },
+  { src: kitchenW, alt: 'williamsburg' },
   { src: dining, alt: 'koreatown' },
+  { src: checkers, alt: 'upper east side' },
+  { src: nook, alt: 'upper east side' },
   { src: pillows, alt: 'koreatown' },
   { src: stairs, alt: 'williamsburg' },
   { src: kitchen, alt: 'koreatown' },
@@ -45,7 +55,6 @@ export default function WorkCarousel() {
                 objectFit: 'contain',
                 objectPosition: 'bottom right'
               }}
-              placeholder="blur"
               className="pr-1"
             />
           </div>)}
