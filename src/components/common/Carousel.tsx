@@ -41,7 +41,7 @@ export function Carousel({ className = '', children, id = 'carousel', isAutoPlay
             triggerAutoPlayStart.current = false;
         }
         return clearAutoPlayInterval;
-    }, [triggerAutoPlayStart, activeIndex]);
+    }, [triggerAutoPlayStart.current, activeIndex]);
 
     // **Scroll Listener**
     useEffect(() => {
@@ -92,7 +92,7 @@ export function Carousel({ className = '', children, id = 'carousel', isAutoPlay
                     id='scroll-back'
                     onClick={() => {
                         scrollToIndex(isFirstActive ? itemsLength - 1 : activeIndex - 1);
-                        triggerAutoPlayStart.current = true;
+                        triggerAutoPlayStart.current = isAutoPlay;
                     }}
                     className={`bg-white hover:bg-white border-none shadow-none btn-circle w-8 sm:w-12`}
                 >
@@ -102,7 +102,7 @@ export function Carousel({ className = '', children, id = 'carousel', isAutoPlay
                     id='scroll-forward'
                     onClick={() => {
                         scrollToIndex(isLastActive ? 0 : activeIndex + 1);
-                        triggerAutoPlayStart.current = true;
+                        triggerAutoPlayStart.current = isAutoPlay;
                     }}
                     className={`bg-white hover:bg-white border-none shadow-none btn-circle w-8 sm:w-12`}
                 >

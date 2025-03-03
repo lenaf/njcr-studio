@@ -46,6 +46,7 @@ export default function WorkCarousel() {
                 objectPosition: 'bottom right'
               }}
               placeholder="blur"
+              className="pr-1"
             />
           </div>)}
       </Carousel>
