@@ -8,8 +8,7 @@ export default function Page() {
   return (
     <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 flex flex-col h-full w-full">
       <div>
-        <div className="uppercase mb-4"> About</div>
-        <div>
+        <div className="md:mt-10">
           Noah Ruttenberg is a designer based in New York
           City. He received a Masters in Interior Design from
           the Paris College of Art and a B.A. in History of Art

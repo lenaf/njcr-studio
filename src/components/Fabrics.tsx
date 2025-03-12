@@ -7,7 +7,7 @@ import fabric_bw from "public/images/photography/fabrics/bw.png"
 import fabric_red from "public/images/photography/fabrics/red.png"
 import fabric_blue_red from "public/images/photography/fabrics/blue_red.png"
 import fabric_blue_green from "public/images/photography/fabrics/blue_green.png"
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const fabrics = [fabric_green, fabric_bw, fabric_red, fabric_blue_red, fabric_blue_green]
 
@@ -20,6 +20,11 @@ export default function Fabrics() {
 
   const [randomIndex, setRandomIndex] = useState(0);
   const [isReady, setIsReady] = useState(false);
+
+  const scrollRandomIndex = useCallback(() => {
+    const nextIndex = getNextIndex(randomIndex);
+    setRandomIndex(nextIndex);
+  }, [randomIndex, setRandomIndex])
 
   useEffect(() => {
     const prevRandomIndex = localStorage.getItem("prevIndex");
@@ -43,6 +48,8 @@ export default function Fabrics() {
           alt="Noah"
           fill={true}
           objectFit="contain"
+          onClick={scrollRandomIndex}
+          className="cursor-pointer"
         />
       </div>
       <Link className="uppercase text-xl" href='/nav'>{'< Enter >'} </Link>
