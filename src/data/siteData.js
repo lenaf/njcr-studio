@@ -5,7 +5,7 @@ const siteData = {
   locale: 'en-US',
   navRoutes: [
     { href: '/home', title: 'Home' },
-    { href: '/work', title: 'Work' },
+    { href: '/projects', title: 'Projects' },
     { href: '/contact', title: 'Contact' },
   ],
 }
