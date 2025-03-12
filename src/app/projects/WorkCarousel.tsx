@@ -17,6 +17,7 @@ import kitchenW from "public/images/photography/interiors/williamsburg/kitchen.j
 import living from "public/images/photography/interiors/ues/living.jpeg"
 import diningUES from "public/images/photography/interiors/ues/dining.jpg"
 import checkers from "public/images/photography/interiors/ues/checkers.jpg"
+import board from "public/images/photography/interiors/ues/board.jpeg"
 import nook from "public/images/photography/interiors/ues/nook.jpg"
 
 import { useState } from "react"
@@ -24,19 +25,20 @@ import { useState } from "react"
 const carouselImages = [
   { src: office, alt: 'upper east side' },
   { src: chairs, alt: 'koreatown' },
-  { src: living, alt: 'upper east side' },
+  { src: living, alt: 'williamsburg' },
   { src: boot, alt: 'koreatown' },
-  { src: table, alt: 'koreatown' },
+  // { src: table, alt: 'koreatown' },
   { src: bedside, alt: 'koreatown' },
   { src: diningUES, alt: 'upper east side' },
   { src: kitchenW, alt: 'williamsburg' },
-  { src: dining, alt: 'koreatown' },
-  { src: checkers, alt: 'upper east side' },
+  // { src: dining, alt: 'koreatown' },
+  { src: checkers, alt: 'custom backgammon board' },
+  { src: board, alt: 'custom backgammon board' },
   { src: nook, alt: 'upper east side' },
-  { src: pillows, alt: 'koreatown' },
-  { src: stairs, alt: 'williamsburg' },
+  // { src: pillows, alt: 'koreatown' },
+  // { src: stairs, alt: 'williamsburg' },
   { src: kitchen, alt: 'koreatown' },
-  { src: couch, alt: 'koreatown' },
+  // { src: couch, alt: 'koreatown' },
 ]
 
 export default function WorkCarousel() {

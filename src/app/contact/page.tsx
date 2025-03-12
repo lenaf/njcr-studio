@@ -1,7 +1,6 @@
 import { genPageMetadata } from "../seo"
-import Image from "next/image";
 import Link from "next/link";
-import dining from "public/images/photography/interiors/ues/dining.jpg"
+import ContactImage from "./ContactImage";
 
 export const metadata = genPageMetadata({ title: 'Contact' })
 
@@ -14,16 +13,7 @@ export default function Page() {
         <div><Link className="no-underline" target="_blank" href='https://www.instagram.com/noahruttenberg/'>@noahruttenberg</Link></div>
       </div>
       <div className="relative flex-grow md:mt-10">
-        <Image
-          src={dining}
-          alt="Noah"
-          fill
-          style={{
-            objectFit: 'contain',
-            objectPosition: 'top left'
-          }}
-          placeholder="blur"
-        />
+        <ContactImage />
       </div>
     </div>
   )
