@@ -12,7 +12,7 @@ export default function ContactImage() {
   const [isReady, setIsReady] = useState(false);
   useEffect(() => {
     const prevRandomIndex = localStorage.getItem("prevIndexContact");
-    const newRandomIndex = prevRandomIndex === '0' ? 1 : 0;
+    const newRandomIndex = prevRandomIndex === '0' ? 0 : 0;
     setRandomIndex(newRandomIndex);
     setIsReady(true);
     localStorage.setItem("prevIndexContact", newRandomIndex.toString());
