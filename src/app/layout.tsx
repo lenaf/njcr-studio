@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import '../css/index.css'
 import siteData from "@/data/siteData";
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/next';
 
 const minion = localFont({ src: "../../public/fonts/MinionPro-Regular.otf" })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <main className={minion.className}>
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
