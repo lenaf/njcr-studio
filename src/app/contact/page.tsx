@@ -9,8 +9,8 @@ export default function Page() {
     <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 flex flex-col h-full w-full">
       <div className="md:mt-10">
         <div>
-          <Link className="no-underline" href="mailto: njcrstudio@gmail.com">
-            njcrstudio@gmail.com
+          <Link className="no-underline" href="mailto: info@njcrstudio.com">
+            info@njcrstudio.com
           </Link>
         </div>
         <div>

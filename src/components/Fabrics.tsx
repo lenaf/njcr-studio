@@ -52,7 +52,7 @@ export default function Fabrics() {
           className="cursor-pointer"
         />
       </div>
-      <Link className="uppercase text-xl" href='/nav'>{'< Enter >'} </Link>
+      <Link className="uppercase text-xl" href='/projects'>{'< Enter >'} </Link>
     </div>
   ) : <div></div>;
 }

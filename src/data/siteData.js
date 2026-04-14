@@ -4,8 +4,8 @@ const siteData = {
   language: 'en-us',
   locale: 'en-US',
   navRoutes: [
-    { href: '/home', title: 'Home' },
     { href: '/projects', title: 'Projects' },
+    { href: '/about', title: 'About' },
     { href: '/contact', title: 'Contact' },
   ],
 }
