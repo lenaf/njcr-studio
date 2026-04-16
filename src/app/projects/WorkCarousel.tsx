@@ -65,10 +65,10 @@ export default function WorkCarousel() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full py-8 ">
       <Carousel
         setActiveIndexCb={setActiveIndex}
-        className="relative w-full h-1/2 xs:h-3/4 sm:h-full sm:pb-10"
+        className="relative w-full h-[65vh] sm:h-full sm:pb-10"
         isAutoPlay={false}
       >
         {carouselImages.map(({ src, alt }, i) => (
@@ -79,7 +79,7 @@ export default function WorkCarousel() {
               fill
               style={{
                 objectFit: "contain",
-                objectPosition: "bottom right",
+                objectPosition: "center center",
               }}
               className="pr-1"
             />

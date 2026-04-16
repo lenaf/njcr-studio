@@ -30,7 +30,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
-      <div className="relative flex-grow md:mt-10">
+      <div className="relative h-[50vh] md:h-auto md:flex-grow md:mt-10">
         <ContactImage />
       </div>
     </div>
