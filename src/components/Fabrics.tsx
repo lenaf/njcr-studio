@@ -2,14 +2,14 @@
 
 import Image from "next/image"
 import Link from "next/link";
-import fabric_green from "public/images/photography/fabrics/green.png"
-import fabric_bw from "public/images/photography/fabrics/bw.png"
-import fabric_red from "public/images/photography/fabrics/red.png"
-import fabric_blue_red from "public/images/photography/fabrics/blue_red.png"
-import fabric_blue_green from "public/images/photography/fabrics/blue_green.png"
+import embroidery1 from "public/images/photography/fabrics/_0004_NJCR-embroidery-2.png"
+import embroidery2 from "public/images/photography/fabrics/_0003_NJCR-embroidery-3.png"
+import embroidery3 from "public/images/photography/fabrics/_0002_NJCR-embroidery-4.png"
+import embroidery4 from "public/images/photography/fabrics/_0001_NJCR-embroidery-5.png"
+import embroidery5 from "public/images/photography/fabrics/_0000_NJCR-embroidery-6.png"
 import { useCallback, useEffect, useState } from "react";
 
-const fabrics = [fabric_green, fabric_bw, fabric_red, fabric_blue_red, fabric_blue_green]
+const fabrics = [embroidery1, embroidery2, embroidery3, embroidery4, embroidery5]
 
 function getNextIndex(currentIndex) {
   const nextIndex = (currentIndex + 1) % fabrics.length;
