@@ -65,10 +65,10 @@ export default function WorkCarousel() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <div className="h-full w-full py-8 ">
+    <div className="h-full w-full py-8 overflow-hidden">
       <Carousel
         setActiveIndexCb={setActiveIndex}
-        className="relative w-full h-[60vh] sm:h-full sm:pb-10"
+        className="relative w-full h-[60vh] sm:h-full sm:pb-8"
         isAutoPlay={false}
       >
         {carouselImages.map(({ src, alt }, i) => (
@@ -86,9 +86,7 @@ export default function WorkCarousel() {
           </div>
         ))}
       </Carousel>
-      <div className="absolute left-16 pt-6 sm:pt-0">
-        {carouselImages[activeIndex].alt}
-      </div>
+      <div className="pt-2 sm:pt-0">{carouselImages[activeIndex].alt}</div>
     </div>
   );
 }
