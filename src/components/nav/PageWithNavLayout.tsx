@@ -14,13 +14,13 @@ export default function PageLayout({
           <span className="uppercase tracking-[0.3em] text-sm">NJCR Studio</span>
         </div>
       </div>
-      <div className="flex p-16 sm:gap-16 md:gap-24 flex-1 min-h-0">
+      <div className="flex p-8 sm:p-16 sm:gap-16 md:gap-24 flex-1 min-h-0 overflow-y-auto sm:overflow-hidden">
         <div className="mt-10">
           <DesktopNav />
         </div>
         {children}
       </div>
-      <div className="mobile pb-8 text-center">
+      <div className="mobile pb-12 text-center flex-shrink-0">
         <div className="uppercase text-xs font-semibold tracking-[0.25em] leading-5">
           <div>150 W 28th St</div>
           <div>New York, NY</div>
