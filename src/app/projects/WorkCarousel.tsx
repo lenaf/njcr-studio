@@ -68,7 +68,7 @@ export default function WorkCarousel() {
     <div className="h-full w-full py-8 ">
       <Carousel
         setActiveIndexCb={setActiveIndex}
-        className="relative w-full h-[65vh] sm:h-full sm:pb-10"
+        className="relative w-full h-[60vh] sm:h-full sm:pb-10"
         isAutoPlay={false}
       >
         {carouselImages.map(({ src, alt }, i) => (

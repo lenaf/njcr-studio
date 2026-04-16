@@ -7,7 +7,7 @@ export default function PageLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-dvh overflow-hidden">
       <div className="mobile">
         <MobileNav />
         <div className="flex justify-center pt-6">
