@@ -11,7 +11,7 @@ export default function PageLayout({
       <div className="mobile">
         <MobileNav />
         <div className="flex justify-center pt-6">
-          <span className="uppercase tracking-[0.3em] text-sm">
+          <span className="uppercase text-lg tracking-[0.6em]">
             NJCR Studio
           </span>
         </div>
@@ -23,14 +23,11 @@ export default function PageLayout({
         {children}
       </div>
       <div className="mobile mt-auto pb-4 text-center flex-shrink-0">
-        <div className="uppercase text-xs font-semibold tracking-[0.25em] leading-5">
+        <div className="uppercase ">
           <div>150 W 28th St</div>
           <div>New York, NY</div>
         </div>
-        <a
-          href="mailto:info@njcrstudio.com"
-          className="text-[10px] tracking-wide mt-1 no-underline text-inherit"
-        >
+        <a href="mailto:info@njcrstudio.com" className="no-underline">
           info@njcrstudio.com
         </a>
       </div>
